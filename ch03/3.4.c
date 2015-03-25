@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
  *  ./a.out 2 2 >> temp.foo
  *  write only, append
  *
- *  ./a.out 5 5<>temp.foo
+ *  ./a.out 5 5<>temp.foo   The clause 5<>temp.foo opens the temp.foo for reading and writing on file descriptor 5.
  *  read write
  *
  */
