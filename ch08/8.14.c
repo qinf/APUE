@@ -1,5 +1,6 @@
 #include "apue.h"
 #include "system.h"
+#include "pr_exit.h"
 
 int main(int argc, char *argv[]) {
     int status;
