@@ -19,7 +19,8 @@ int main(void) {
     } else if (pid == 0) {
         glob++; // 更改父进程地址空间中的变量
         var++;
-        _exit(0);
+        //_exit(0);
+        exit(0);
     }
 
     printf("pid = %d, glob = %d, var = %d\n", getpid(), glob, var);
