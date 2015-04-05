@@ -1,3 +1,15 @@
+/*
+ * #include <pthread.h>
+ * void pthread_exit(void *rval_ptr);
+ * rval_ret是一个无类型指针，与传给启动例程的单个参数类似。进程的其他线程可以通过调用
+ * pthread_join函数访问到这个指针。
+ *
+ * int pthread_join(pthread_t thread, void **rval_ptr);
+ * return value: ture 0, false errno
+ * 调用线程将被阻塞知道指定的线程调用pthread_exit、或从启动例程中返回或者被取消。
+ *
+ */
+
 #include "apue.h"
 #include <pthread.h>
 
